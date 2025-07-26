@@ -95,6 +95,7 @@ assets/
 pyproject.toml        # Build & install config
 install.sh            # Installer script
 README.md
+LICENSE
 ```
 
 ---
