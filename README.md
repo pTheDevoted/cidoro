@@ -51,9 +51,9 @@ chmod +x install.sh
 
 This will:
 
-- Create a virtual environment (cidoro_env)
+- Create a virtual environment (```cidoro_env```)
 - Install dependencies
-- Install Cidoro in editable mode (pip install -e .)
+- Install Cidoro in editable mode (```pip install -e .```)
 - Check and install ffplay if missing
 
 ---
@@ -88,7 +88,7 @@ cidoro/
  ├── utils.py         # Core pomodoro logic
  ├── display.py       # Visuals, banners, colors
  ├── alarm.mp3        # Sound alarm
- ├── themes.txt       # Saved theme
+ ├── themes.txt       # Saved theme (auto-generated)
  ├── progress.json    # Saved sessions (auto-generated)
 assets/
  ├── logo.png         # Screenshot
