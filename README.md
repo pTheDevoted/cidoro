@@ -1,41 +1,58 @@
 # 🍅 Cidoro
 
-Minimalist CLI Pomodoro timer built for focus, discipline and productivity.
+Minimalist CLI Pomodoro timer for focus, discipline and productivity.
 
 ![Cidoro Logo](assets/logo.png)
 
+---
+
+## 🧭 Table of Contents
+
+| Section | Description |
+|--------|-------------|
+| 📌 [About](#about) | Project overview and purpose |
+| ⚙️ [Technologies](#technologies) | Main tools and libraries |
+| 🧪 [Compatibility](#compatibility) | Tested platforms |
+| 🚀 [Installation](#installation) | Quick setup guide |
+| 🍅 [Usage](#usage) | How to use |
+| 📁 [Project Structure](#project-structure) | Key files and folders |
+| 📄 [License](#license) | Licensing info |
+| 👤 [Author](#author) | Contact information |
 
 ---
 
-## 📌 What is it?
+## About
 
-**Cidoro** is a Pomodoro timer running entirely in your terminal.  
-Designed for developers, students and anyone who wants to track deep work, with customizable themes, sound alarm and progress logging.
+**Cidoro** is a lightweight Pomodoro timer built entirely for the command line.  
+Perfect for developers, students, or anyone who wants a distraction-free workflow with features like customizable themes, sound notifications, and progress tracking.
 
 ---
 
-## ⚙️ Technologies
+## Technologies
 
 - **Python 3** (≥3.7)
-- **InquirerPy** – beautiful CLI menus
-- **Pystyle** – colorful terminal output
-- **FFmpeg (ffplay)** – sound alarm playback
-- **JSON** – session logs
+- [InquirerPy](https://github.com/kazhala/InquirerPy) – Interactive CLI menus
+- [Pystyle](https://github.com/xdvrx1/pystyle) – Colorful terminal output
+- **FFmpeg** (`ffplay`) – Sound playback
+- **JSON** – Session storage
 
 ---
 
-## 🧪 Tested on
+## Compatibility
 
+Tested on:
 - Ubuntu 22.04 LTS
 - Debian-based distributions
 
-*(should work on any system with Python 3 and ffplay)*
+Should run smoothly on most systems with Python 3 and `ffplay` installed.
 
 ---
 
-## 🚀 Installation
+## Installation
+> [!NOTE]
+> For the installation to work, you must have git installed previously.
 
-Clone this repository:
+Clone the repository:
 
 ```bash
 git clone https://github.com/yourusername/cidoro.git
@@ -50,15 +67,14 @@ chmod +x install.sh
 ```
 
 This will:
-
-- Create a virtual environment (```cidoro_env```)
+- Set up a virtual environment (`cidoro_env`)
 - Install dependencies
-- Install Cidoro in editable mode (```pip install -e .```)
-- Check and install ffplay if missing
+- Install Cidoro in editable mode (`pip install -e .`)
+- Check and install `ffplay` if missing
 
 ---
 
-## 🍅 Usage
+## Usage
 
 Activate the environment:
 
@@ -66,51 +82,50 @@ Activate the environment:
 source cidoro_env/bin/activate
 ```
 
-Run:
+Start the application:
 
 ```bash
 cidoro
 ```
 
-From there, explore the menu to:
-
+Inside the CLI, you can:
 - Start pomodoro sessions
-- View saved progress
-- Change themes and configs
+- View past progress
+- Change themes and settings
 
 ---
 
-## 📁 Project structure
+## Project Structure
 
 ```
 cidoro/
  ├── cli.py           # CLI menus
- ├── utils.py         # Core pomodoro logic
- ├── display.py       # Visuals, banners, colors
- ├── alarm.mp3        # Sound alarm
+ ├── utils.py         # Pomodoro logic
+ ├── display.py       # Visuals and colors
+ ├── alarm.mp3        # Alarm sound
  ├── themes.txt       # Saved theme (auto-generated)
- ├── progress.json    # Saved sessions (auto-generated)
+ ├── progress.json    # Session history (auto-generated)
 assets/
- ├── logo.png         # Screenshot
-pyproject.toml        # Build & install config
+ └── logo.png         # Project logo
 install.sh            # Installer script
+pyproject.toml        # Build config
 README.md
 LICENSE
 ```
 
 ---
 
-## 📄 License
+## License
 
-This project is licensed under the MIT License.  
-Feel free to use, modify, and distribute.
-
----
-
-## 👤 Author & Contact
-
-Instagram: pedrodevoted  
-Discord: thedevoted
+Distributed under the MIT License.  
+Feel free to use, modify, and share.
 
 ---
 
+## Author
+
+Pedro-A.
+- Instagram: [@pedrodevoted](https://instagram.com/pedrodevoted)
+- Discord: thedevoted
+
+---
