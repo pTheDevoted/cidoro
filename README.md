@@ -55,7 +55,7 @@ Should run smoothly on most systems with Python 3 and `ffplay` installed.
 Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/cidoro.git
+git clone https://github.com/pTheDevoted/cidoro
 cd cidoro
 ```
 
